@@ -11,7 +11,7 @@ In future iterations, I plan to incorporate the Bloc pattern for enhanced state 
 Attached below are some project screenshots for your reference.
 
 ![Screenshot](assets/images/Screenshot 2023-11-29 at 1.20.09 AM.png)
-![Screenshot](assets/images/Screenshot 2023-11-29 at 1.20.03 AM.png)
+
 
 
 For help getting started with Flutter development, view the
