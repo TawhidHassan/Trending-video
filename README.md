@@ -1,15 +1,18 @@
 # clientproject
 
-A new Flutter project.
+This is video player app
+where you play trending video
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is developed using Flutter, adhering to the MVVM architecture pattern.
+For state management, I have utilized the GetX library, providing a robust and efficient solution.
+In future iterations, I plan to incorporate the Bloc pattern for enhanced state management capabilities.
+Attached below are some project screenshots for your reference.
 
-A few resources to get you started if this is your first Flutter project:
+![Alt text](assets/images/Screenshot 2023-11-29 at 1.20.09 AM.png)
+![Alt text](assets/images/Screenshot 2023-11-29 at 1.20.03 AM.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
