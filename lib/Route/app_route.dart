@@ -7,6 +7,8 @@ import '../Constants/Strings/app_strings.dart';
 import '../Presentation/Pages/SplashScreen/spalash_screen.dart';
 import '../Presentation/Pages/Trending/main_screen.dart';
 import '../Presentation/Pages/Trending/video_details_page.dart';
+import '../Presentation/Pages/channel_page.dart';
+import '../Presentation/Pages/comment_page.dart';
 
 
 class AppRouter {
@@ -21,9 +23,17 @@ class AppRouter {
         return MaterialPageRoute(
             builder: (BuildContext context) =>MainScreen()
         );
-        case VIDEO_DETAILS_PAGE:
+      case VIDEO_DETAILS_PAGE:
         return MaterialPageRoute(
             builder: (BuildContext context) =>VideoDetailsPage(video: args!["video"],)
+        );
+      case CHANNEL_PAGE:
+        return MaterialPageRoute(
+            builder: (BuildContext context) =>ChannelPage()
+        );
+      case COMMENT_PAGE:
+        return MaterialPageRoute(
+            builder: (BuildContext context) =>CommentPage()
         );
 
 

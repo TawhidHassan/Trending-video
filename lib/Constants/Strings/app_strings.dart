@@ -14,5 +14,7 @@ const BASE_URL_IMAGE = "https://staging-lms.sgp1.digitaloceanspaces.com/";
 //route name
 const MAIN_PAGE = "/main_page";
 const VIDEO_DETAILS_PAGE = "/VIDEO_DETAILS_PAGE";
+const COMMENT_PAGE = "/COMMENT_PAGE";
+const CHANNEL_PAGE = "/CHANNEL_PAGE";
 
 

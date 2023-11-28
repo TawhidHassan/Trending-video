@@ -401,56 +401,66 @@ class _VideoDetailsPageState extends State<VideoDetailsPage> {
                           children: [
                             Expanded(
                               flex: 1,
-                              child: SizedBox(
-                                height: 40,
-                                width: 40,
-                                child: CachedNetworkImage(
-                                  imageUrl: widget.video!.channelImage ?? "",
-                                  errorWidget: (context, url, error) =>
-                                      CircleAvatar(
-                                        backgroundImage: AssetImage(
-                                            Assets.icons.acount.path),
-                                        radius: 40,
-                                      ),
-                                  placeholder: (context, url) =>
-                                      SizedBox(
-                                          height: 30,
-                                          width: 30,
-                                          child: CircularProgressIndicator()),
-                                  imageBuilder: (context, image) =>
-                                      CircleAvatar(
-                                        backgroundImage: image,
-                                        radius: 40,
-                                      ),
+                              child: InkWell(
+                                onTap: (){
+                                  Navigator.pushNamed(context, CHANNEL_PAGE);
+                                },
+                                child: SizedBox(
+                                  height: 40,
+                                  width: 40,
+                                  child: CachedNetworkImage(
+                                    imageUrl: widget.video!.channelImage ?? "",
+                                    errorWidget: (context, url, error) =>
+                                        CircleAvatar(
+                                          backgroundImage: AssetImage(
+                                              Assets.icons.acount.path),
+                                          radius: 40,
+                                        ),
+                                    placeholder: (context, url) =>
+                                        SizedBox(
+                                            height: 30,
+                                            width: 30,
+                                            child: CircularProgressIndicator()),
+                                    imageBuilder: (context, image) =>
+                                        CircleAvatar(
+                                          backgroundImage: image,
+                                          radius: 40,
+                                        ),
+                                  ),
                                 ),
                               ),
                             ),
                             SizedBox(width: 8,),
                             Expanded(
                                 flex: 3,
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      widget.video!.channelName ?? "",
-                                      style: TextStyle(
-                                        color: Color(0xFF1A202C),
-                                        fontSize: 14,
-                                        fontFamily: 'Poppins',
-                                        fontWeight: FontWeight.w500,
+                                child: InkWell(
+                                  onTap: (){
+                                    Navigator.pushNamed(context, CHANNEL_PAGE);
+                                  },
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        widget.video!.channelName ?? "",
+                                        style: TextStyle(
+                                          color: Color(0xFF1A202C),
+                                          fontSize: 14,
+                                          fontFamily: 'Poppins',
+                                          fontWeight: FontWeight.w500,
+                                        ),
                                       ),
-                                    ),
-                                    Text(
-                                      '${widget.video!.channelSubscriber} Subscribers',
-                                      style: TextStyle(
-                                        color: Color(0xFF718096),
-                                        fontSize: 11,
-                                        fontFamily: 'Poppins',
-                                        fontWeight: FontWeight.w400,
-                                        letterSpacing: -0.22,
-                                      ),
-                                    )
-                                  ],
+                                      Text(
+                                        '${widget.video!.channelSubscriber} Subscribers',
+                                        style: TextStyle(
+                                          color: Color(0xFF718096),
+                                          fontSize: 11,
+                                          fontFamily: 'Poppins',
+                                          fontWeight: FontWeight.w400,
+                                          letterSpacing: -0.22,
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 )
                             ),
                             SizedBox(width: 8,),
@@ -537,7 +547,11 @@ class _VideoDetailsPageState extends State<VideoDetailsPage> {
 
                               ),
                             ),
-                            Assets.icons.arrowupdowon.svg()
+                            InkWell(
+                                onTap: (){
+                                  Navigator.pushNamed(context, COMMENT_PAGE);
+                                },
+                                child: Assets.icons.arrowupdowon.svg())
                           ],
                         ),
                         SizedBox(height: 8,),
