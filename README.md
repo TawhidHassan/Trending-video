@@ -10,8 +10,8 @@ For state management, I have utilized the GetX library, providing a robust and e
 In future iterations, I plan to incorporate the Bloc pattern for enhanced state management capabilities.
 Attached below are some project screenshots for your reference.
 
-![Alt text](assets/images/Screenshot 2023-11-29 at 1.20.09 AM.png)
-![Alt text](assets/images/Screenshot 2023-11-29 at 1.20.03 AM.png)
+![Screenshot](assets/images/Screenshot 2023-11-29 at 1.20.09 AM.png)
+![Screenshot](assets/images/Screenshot 2023-11-29 at 1.20.03 AM.png)
 
 
 For help getting started with Flutter development, view the
